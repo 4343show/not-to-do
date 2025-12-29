@@ -4,41 +4,51 @@
   <meta charset="UTF-8" />
   <title>Not To Do List</title>
   <style>
+:root {
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --primary: #111827;
+  --border: #e5e7eb;
+}
+
 body {
-  font-family: "Hiragino Maru Gothic ProN", system-ui, sans-serif;
-  max-width: 620px;
-  margin: 40px auto;
+  font-family: "SF Pro Text", system-ui, -apple-system, BlinkMacSystemFont;
+  max-width: 640px;
+  margin: 48px auto;
   padding: 0 16px;
-  background: #fff6f6;
+  background: var(--bg);
+  color: var(--primary);
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 28px;
   margin-bottom: 20px;
+  font-weight: 700;
   text-align: center;
-  color: #ff6b6b;
 }
 
 form {
   display: flex;
-  gap: 8px;
+  gap: 10px;
   margin-bottom: 20px;
 }
 
 input[type="text"] {
   flex: 1;
-  padding: 10px;
-  border-radius: 12px;
-  border: 1.5px solid #ffc7c7;
-  background: #ffffff;
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  font-size: 14px;
 }
 
 button {
-  padding: 10px 14px;
-  border-radius: 12px;
-  border: none;
-  background: #ff9aa2;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid #111827;
+  background: #111827;
   color: white;
+  font-size: 14px;
   cursor: pointer;
 }
 
@@ -55,17 +65,18 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 14px;
-  background: white;
-  border: 1px solid #ffdcdc;
-  padding: 10px 12px;
-  margin-bottom: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
 }
 
 .item-text {
   margin-right: 8px;
   word-break: break-all;
+  line-height: 1.5;
 }
   </style>
 </head>
