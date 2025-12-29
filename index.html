@@ -4,45 +4,69 @@
   <meta charset="UTF-8" />
   <title>Not To Do List</title>
   <style>
-    body {
-      font-family: system-ui, sans-serif;
-      max-width: 600px;
-      margin: 40px auto;
-      padding: 0 16px;
-    }
-    h1 {
-      font-size: 24px;
-      margin-bottom: 16px;
-    }
-    form {
-      display: flex;
-      gap: 8px;
-      margin-bottom: 16px;
-    }
-    input[type="text"] {
-      flex: 1;
-      padding: 8px;
-    }
-    button {
-      padding: 8px 12px;
-      cursor: pointer;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border: 1px solid #ddd;
-      padding: 8px 10px;
-      margin-bottom: 8px;
-    }
-    .item-text {
-      margin-right: 8px;
-      word-break: break-all;
-    }
+body {
+  font-family: "Hiragino Maru Gothic ProN", system-ui, sans-serif;
+  max-width: 620px;
+  margin: 40px auto;
+  padding: 0 16px;
+  background: #fff6f6;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ff6b6b;
+}
+
+form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1.5px solid #ffc7c7;
+  background: #ffffff;
+}
+
+button {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: none;
+  background: #ff9aa2;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 14px;
+  background: white;
+  border: 1px solid #ffdcdc;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.item-text {
+  margin-right: 8px;
+  word-break: break-all;
+}
   </style>
 </head>
 <body>
